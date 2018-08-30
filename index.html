@@ -12,7 +12,7 @@
 
 <body>
     
-    <!-- Everthing in class heading is for the upper nav section -->
+    <!-- Everthing in class "wrapper" is for the upper nav section -->
     <div class="wrapper">    
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             
@@ -28,28 +28,34 @@
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" id="contact" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link" id="contactLink" href="contact.html">Contact</a>
                 </div> 
             </div>    
         </nav>
     </div>
+
+
+    <!-- The grid for the About Me section -->
     <div class="container">
-        <div class="row">
+        <div class="row rowHeader">
             <div class="col-lg-12">
                     <h1 class="aboutMe">About Me</h1>
             </div>
         </div>
-        <div class="row">
+        
+        <!-- Code for the gray line -->
+        <div class="row rowBody">
             <div class="col-lg">
                 <hr class="divdingLine">
             </div>
         </div>
+
         <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <img class="img-fluid" src="assets/images/self.jpg" class="rounded float-left" alt="self">
                 
             </div>
-            <div class="col-lg-10">
+            <div class="col-lg-9">
                 <p class="aboutMeText">A former sportswriter with several years of E-commerce experience who decided to study web development to seek a new career, opportunities and prosperity.</p>
 
                 <p class="aboutMeText">Although I am thankful and appreciate the experiences I have gone through, as well as the skills I have learned in my prior careers, I am looking forward with much excitement the potential of this new evolution in my life.</p>
@@ -61,11 +67,9 @@
     </div>
     
     <div class="card">
-        <div class="card-header"></div>
+        <div class="card-footer"></div>
         <div class="card-body"></div>
     </div>
-
-
     
     <!-- Javascript links from Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
