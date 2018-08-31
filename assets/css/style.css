@@ -5,7 +5,7 @@ body {
 
 .container {
     height: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 /* Start of CSS for Header */
@@ -14,6 +14,11 @@ body {
     background-color: white;
     border-bottom: 2px solid #cccccc;
     margin-bottom: 40px;
+}
+
+/* CSS wrapper margin for only Portfolio Page */
+#wrapper {
+    margin-bottom: 16px;
 }
 
 .navbar.navbar-expand-lg.navbar-light.bg-white {
@@ -73,7 +78,7 @@ body {
 
 /* End of all CSS for Header */
 
-/* Start of CSS for About Me Section */
+/* Start of CSS for About Me Page */
 
 .row {
     width: 960px;
@@ -99,8 +104,14 @@ body {
 }
 
 /* CSS for bio picture */
-.col-lg-3 {
+#selfImg {
     padding-left: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.col-lg-3 {
+    border-bottom: 1px solid #dddddd;
 }
 
 /* CSS for main body content */
@@ -110,9 +121,10 @@ body {
     color: #777777;
     line-height: 2;
     font-size: 18px;
+    border-bottom: 1px solid #dddddd;
 }
 
-.aboutMe, .contact {
+.aboutMe, .contact, .portfolio {
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
@@ -137,9 +149,45 @@ body {
     color: #4AC199;
 }
 
-/* End of CSS for About Me Section */
+/* End of CSS for About Me Page */
 
-/* Start of CSS for Contact Section */
+/* Start of CSS for Porfolio Page */
+
+.img-fluid {
+    width: 275px;
+    height: 207px;
+}
+
+.col-lg-4 {
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right:0px;
+}
+
+/* Adds space between header and body */
+#firstRow {
+    padding-top: 22px;
+    padding-bottom: 3px;
+}
+#lastRow {
+    border-bottom: 1px solid #dddddd;
+}
+
+.carousel-caption {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    width: 275px;
+    left: 9.4%;
+    bottom: 56px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
+
+/* End of CSS for Portfolio Page */
+
+/* Start of CSS for Contact Page */
 
 #formBox {
     border-top: none;
@@ -194,3 +242,24 @@ input, textarea {
     border: none;
     outline: none;
 }
+
+/* End of CSS for Contact Page */
+
+.card {
+    position: fixed;
+    border: none;
+    border-radius: 0;
+    /* left: 0; */
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    height: 70px;
+    border-top: 8px solid #4aaaa5;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* CSS for Sticky Footer */
