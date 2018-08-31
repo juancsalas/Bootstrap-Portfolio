@@ -81,8 +81,8 @@ body {
 /* Start of CSS for About Me Page */
 
 .row {
-    width: 960px;
-    margin: auto;
+    margin-left: 75px;
+    margin-right: 75px;
     background-color: white;
     border-right: 1px solid #dddddd;
     border-left: 1px solid #dddddd;
@@ -105,12 +105,14 @@ body {
 
 /* CSS for bio picture */
 #selfImg {
-    padding-left: 30px;
-    max-width: 100%;
+    width: 100%;
+    padding-left: 15px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.col-lg-3 {
+#imageCol {
     border-bottom: 1px solid #dddddd;
 }
 
@@ -245,21 +247,18 @@ input, textarea {
 
 /* End of CSS for Contact Page */
 
+/* CSS for Sticky Footer */
 .card {
     position: fixed;
     border: none;
     border-radius: 0;
-    /* left: 0; */
     bottom: 0;
     width: 100%;
     background-color: #666666;
     height: 70px;
     border-top: 8px solid #4aaaa5;
+    z-index: 999;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
 
-/* CSS for Sticky Footer */
+
